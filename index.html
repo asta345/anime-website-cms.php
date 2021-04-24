@@ -140,30 +140,7 @@
 <p class="disclaimer"><our page doesnot store any data of your email</p>
 </div>
 
-    <?php    
-        
-    include "connection.php";    
-        
-    if(isset($_GET['admin'])){    
-    $sql = "delete from registration where id = '".$_GET['admin_id']."'";    
-    $result = mysql_query($sql);    
-    }    
-        
-    $sql = "select * from registration";    
-    $result = mysql_query($sql);    
-    ?>    
-    <html>    
-        <body>    
-            <table width = "100%" border = "1" cellspacing = "1" cellpadding = "1">    
-                <tr>    
-                    <td>Id</td>    
-                    <td>email</td>    
-                      <td>subscribe</td>
-                      <td>vadility</td>  
-                </tr>    
-            </table>    
-        </body>    
-    </html>    
+    
 
 
 
